@@ -5,4 +5,4 @@ firebase-admin==6.2.0
 pandas==2.1.3
 pydantic==2.5.2
 transformers
-torch==2.0.0+cpu  # 根據 Vercel 環境選擇適配版本
+torch
