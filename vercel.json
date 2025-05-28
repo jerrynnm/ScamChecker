@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Backend/app.py",
+      "use": "@vercel/python",
+      "config": { "maxDuration": 60 }
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/predict",
+      "dest": "Backend/app.py"
+    },
+    {
+      "src": "/feedback",
+      "dest": "Backend/app.py"
+    }
+  ]
+}
