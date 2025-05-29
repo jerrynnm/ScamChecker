@@ -50,7 +50,7 @@ except Exception as e:
 
 # 從 Google Drive 載入 model.pth
 def load_model_from_drive():
-    model_url = "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"  # 替換為你的檔案 ID
+    model_url = "https://drive.google.com/uc?export=download&id=1UXkOqMPUiPUIbsy8iENHUqbNFLEHcFFg"  # 替換為你的檔案 ID
     response = requests.get(model_url)
     if response.status_code == 200:
         with open("model.pth", "wb") as f:
